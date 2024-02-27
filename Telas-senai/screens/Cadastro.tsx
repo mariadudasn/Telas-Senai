@@ -4,7 +4,7 @@ import Descrição from '../components/Descrição';
 import Input from '../components/Input';
 import Botão from '../components/Botão';
 
-export default function Recusenha() {
+export default function Cadastro() {
   return (
     <>
       <View>
