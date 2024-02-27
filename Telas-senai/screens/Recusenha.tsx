@@ -1,7 +1,8 @@
 import {View} from 'react-native';
 import Header from '../components/Header';
 import Descrição from '../components/Descrição';
-import Input from '../components/input';
+import Input from '../components/Input';
+import Botão from '../components/Botão';
 
 export default function Recusenha() {
   return (
@@ -9,7 +10,8 @@ export default function Recusenha() {
       <View>
         <Header cor="#011E83" texto="Recuperação de senha"></Header>
         <Descrição textodes="Insira seu e-mail para recuperar a senha!"></Descrição>
-        <Input nome="Email:" texto="Insira seu e-mail"/>
+        <Input nome="Email:" texto2="Insira seu e-mail:"/>
+        <Botão texto3="Recuperar"/>
       </View>
     </>
   );

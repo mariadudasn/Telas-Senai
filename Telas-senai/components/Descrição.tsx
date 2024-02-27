@@ -16,6 +16,7 @@ export default function Descrição ({textodes}) {
         lineHeight: 19,
         paddingTop: 50,
         color: '#000000',
+        paddingBottom: 50,
     },
   }
 )
