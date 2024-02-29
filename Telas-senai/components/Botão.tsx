@@ -1,6 +1,10 @@
 import { Text, TouchableOpacity, StyleSheet, View } from 'react-native';
 
-export default function Botão({texto3}) {
+type BotãoProps ={
+    texto3: string
+  }
+
+export default function Botão({texto3}: BotãoProps) {
     return (
       <>
         <View style={styles.pad}>

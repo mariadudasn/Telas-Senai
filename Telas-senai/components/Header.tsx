@@ -1,7 +1,12 @@
 import { StyleSheet, Text, View, Image} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
-export default function Header ({cor, texto}) {
+type HeaderProps ={
+  cor: string,
+  texto: string
+}
+
+export default function Header ({cor, texto}: HeaderProps) {
     return (
       <View style={[stylesHea.header, {backgroundColor: cor}]}>
           <StatusBar style='light'/>

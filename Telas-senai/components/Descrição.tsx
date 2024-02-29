@@ -1,6 +1,10 @@
 import {StyleSheet, Text} from 'react-native';
 
-export default function Descrição ({textodes}) {
+type DescriçãoProps ={
+  textodes: string
+}
+
+export default function Descrição ({textodes}:DescriçãoProps) {
     return (
         <Text style={stylesdes.texto}>{textodes}</Text>
     );
