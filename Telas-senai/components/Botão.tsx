@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 5,
+        marginBottom:10,
     },
 
     texto3: {

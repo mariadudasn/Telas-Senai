@@ -29,7 +29,7 @@ export default function Nav ({...props}) {
     },
 
     texto: {
-      fontSize: 18,
+      fontSize: 14,
       color: "#595959"
     },
     

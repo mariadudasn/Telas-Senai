@@ -16,12 +16,11 @@ export default function Footer ({...props}) {
     footer: {
         width: '100%',
         flexDirection: "row",
-        height:70,
+        height:60,
         gap: 10,
         paddingLeft: 20,
         paddingRight: 20,
         paddingTop: 10,
-        marginTop:30,
         justifyContent:"center",
     },
 

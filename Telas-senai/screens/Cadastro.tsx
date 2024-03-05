@@ -1,4 +1,4 @@
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, ScrollView} from 'react-native';
 import Header from '../components/Header';
 import Descrição from '../components/Descrição';
 import Input from '../components/Input';
@@ -7,7 +7,7 @@ import Botão from '../components/Botão';
 export default function Cadastro() {
   return (
     <>
-      <View>
+      <ScrollView>
         <Header cor="#FF0000" texto="Cadastre-se"></Header>
         <View style={stylesM.margin}>
             <Input label="Nome:" placeholder="Insira seu nome:" />
@@ -18,7 +18,7 @@ export default function Cadastro() {
         <Input label="Senha:" placeholder="Insira sua senha:" secureTextEntry={true}/>
         <Input label="Confirmar senha:" placeholder="Insira seu senha:" secureTextEntry={true}/>
         <Botão texto3="Cadastrar"/>
-      </View>
+      </ScrollView>
     </>
   );
 }

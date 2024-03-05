@@ -28,7 +28,6 @@ export default function Login() {
 
 const styles = StyleSheet.create({
     linkText: {
-        marginTop: 10,
         color: '#4305C7',
       },
 
