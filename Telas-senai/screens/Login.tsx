@@ -10,8 +10,8 @@ export default function Login() {
       <View>
         <Header cor="#000000" texto="Login"></Header>
         <Descrição textodes="Faça Login para Acessar o Sistema!"></Descrição>
-        <Input nome="Email:" texto2="Insira seu e-mail:"/>
-        <Input nome="Senha:" texto2="Insira sua senha:"/>
+        <Input nome="Email:" texto2="Insira seu e-mail:" senha={false}/>
+        <Input nome="Senha:" texto2="Insira sua senha:" senha={true}/>
         <Botão texto3="Entrar"/>
         <View style={styles.link}>
             <TouchableOpacity>

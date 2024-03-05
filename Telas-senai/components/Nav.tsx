@@ -1,4 +1,4 @@
-import { StyleSheet, View, TouchableOpacity} from 'react-native';
+import { StyleSheet, View, TouchableOpacity, Text} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 
@@ -7,6 +7,7 @@ export default function Nav ({...props}) {
         <View style={stylesNav.nav}>
             <StatusBar style='dark'/>
             <TouchableOpacity>{props.icone}</TouchableOpacity>
+            <Text style={stylesNav.texto}>{props.texto}</Text>
             <TouchableOpacity>{props.icone2}</TouchableOpacity>
         </View>
     );
@@ -25,6 +26,11 @@ export default function Nav ({...props}) {
         paddingRight: 20,
         paddingTop: 10,
         marginTop:30
+    },
+
+    texto: {
+      fontSize: 18,
+      color: "#595959"
     },
     
   }

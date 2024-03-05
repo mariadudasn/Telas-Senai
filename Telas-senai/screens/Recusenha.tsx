@@ -10,7 +10,7 @@ export default function Recusenha() {
       <View>
         <Header cor="#011E83" texto="Recuperação de senha"></Header>
         <Descrição textodes="Insira seu e-mail para recuperar a senha!"></Descrição>
-        <Input nome="Email:" texto2="Insira seu e-mail:"/>
+        <Input nome="Email:" texto2="Insira seu e-mail:" senha={false}/>
         <Botão texto3="Recuperar"/>
       </View>
     </>

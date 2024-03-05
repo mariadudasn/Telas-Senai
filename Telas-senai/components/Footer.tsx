@@ -17,8 +17,6 @@ export default function Footer ({...props}) {
         width: '100%',
         flexDirection: "row",
         height:60,
-        position: "relative",
-        bottom: 0,
         gap: 10,
         paddingLeft: 20,
         paddingRight: 20,
