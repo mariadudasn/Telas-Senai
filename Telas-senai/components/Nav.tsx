@@ -4,10 +4,10 @@ import { StatusBar } from 'expo-status-bar';
 
 export default function Nav ({...props}) {
     return (
-        <View style={stylesNav.nav}>
+        <View style={[stylesNav.nav, {backgroundColor: props.backcolor}]}>
             <StatusBar style='dark'/>
             <TouchableOpacity>{props.icone}</TouchableOpacity>
-            <Text style={stylesNav.texto}>{props.texto}</Text>
+            <Text style={[stylesNav.texto, {color: props.corr}]}>{props.texto}</Text>
             <TouchableOpacity>{props.icone2}</TouchableOpacity>
         </View>
     );
@@ -24,13 +24,12 @@ export default function Nav ({...props}) {
         gap: 10,
         paddingLeft: 20,
         paddingRight: 20,
-        paddingTop: 10,
-        marginTop:30
+        paddingTop: 15,
+        marginTop:30,
     },
 
     texto: {
       fontSize: 14,
-      color: "#595959"
     },
     
   }
