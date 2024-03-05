@@ -10,13 +10,13 @@ export default function Cadastro() {
       <View>
         <Header cor="#FF0000" texto="Cadastre-se"></Header>
         <View style={stylesM.margin}>
-            <Input nome="Nome:" texto2="Insira seu nome:" senha={false}/>
+            <Input label="Nome:" placeholder="Insira seu nome:" />
         </View>
-        <Input nome="Sobrenome:" texto2="Insira seu sobrenome:" senha={false}/>
-        <Input nome="E-mail:" texto2="Insira seu e-mail:" senha={false}/>
-        <Input nome="Telefone:" texto2="Insira seu telefone:" senha={false}/>
-        <Input nome="Senha:" texto2="Insira sua senha:" senha={true}/>
-        <Input nome="Confirmar senha:" texto2="Insira seu senha:" senha={true}/>
+        <Input label="Sobrenome:" placeholder="Insira seu sobrenome:"/>
+        <Input label="E-mail:" placeholder="Insira seu e-mail:" />
+        <Input label="Telefone:" placeholder="Insira seu telefone:" />
+        <Input label="Senha:" placeholder="Insira sua senha:" secureTextEntry={true}/>
+        <Input label="Confirmar senha:" placeholder="Insira seu senha:" secureTextEntry={true}/>
         <Botão texto3="Cadastrar"/>
       </View>
     </>

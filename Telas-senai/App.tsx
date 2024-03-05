@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <View>
-        <Inventário></Inventário>
+        <Cadastro></Cadastro>
       </View>
     </>
   );

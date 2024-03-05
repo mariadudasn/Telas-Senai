@@ -1,17 +1,15 @@
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TextInputProps } from 'react-native';
 
-type InputProps = {
-  nome: string,
-  texto2: string
-  senha: boolean
+interface InputProps extends TextInputProps{
+  label:string
 }
 
-export default function Input({nome, texto2, senha}: InputProps) {
+export default function Input({label, ...props}: InputProps) {
     return (
       <>
         <View style={stylesInp.container}>
-          <Text style={stylesInp.titulo}>{nome}</Text>
-          <TextInput style={stylesInp.inserir} placeholder={texto2} secureTextEntry={senha} />
+          <Text style={stylesInp.titulo}>{label}</Text>
+          <TextInput {...props} style={stylesInp.inserir} />
         </View>
       </>
     );
