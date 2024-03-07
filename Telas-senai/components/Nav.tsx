@@ -25,7 +25,7 @@ export default function Nav ({...props}) {
         paddingLeft: 20,
         paddingRight: 20,
         paddingTop: 15,
-        marginTop:30,
+        marginTop:25,
     },
 
     texto: {

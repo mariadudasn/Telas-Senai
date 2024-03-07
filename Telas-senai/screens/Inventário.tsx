@@ -32,7 +32,7 @@ export default function Inventário() {
           <TouchableOpacity style={stylesInv.icn}>
             <Ionicons name="add-circle" size={60} color="#FF0000" />
         </TouchableOpacity>
-        <Footer corr="#595959" colorr="#FF0000" icone={<MaterialIcons name="flip-camera-ios" size={30} color="#FFFFFF" />} icone2={<Fontisto name="list-1" size={25} color="#FFFFFF" />}/>
+        <Footer bordacolor="#FF0000" corr="#595959" colorr="#FF0000" icone={<MaterialIcons name="flip-camera-ios" size={30} color="#FFFFFF" />} icone2={<Fontisto name="list-1" size={25} color="#FFFFFF" />}/>
       </View>
     </>
   );
