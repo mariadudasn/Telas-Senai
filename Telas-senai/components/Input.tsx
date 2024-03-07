@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TextInputProps } from 'react-native';
 
 interface InputProps extends TextInputProps{
@@ -5,16 +6,7 @@ interface InputProps extends TextInputProps{
 }
 
 export default function Input({label, ...props}: InputProps) {
-    return (
-      <>
-        <View style={stylesInp.container}>
-          <Text style={stylesInp.titulo}>{label}</Text>
-          <TextInput {...props} style={stylesInp.inserir} />
-        </View>
-      </>
-    );
-  }
-
+  const [hover, setHover] = useState("#F5F5F5")
   const stylesInp = StyleSheet.create({
 
     container:{
@@ -37,7 +29,21 @@ export default function Input({label, ...props}: InputProps) {
       padding: 10,
       borderRadius: 5,
       marginBottom: 15,
+      borderWidth: 1,
+      borderColor: hover
     }
-    
   })
 
+    return (
+      <>
+        <View style={stylesInp.container}>
+          <Text style={stylesInp.titulo}>{label}</Text>
+          <TextInput {...props} style={stylesInp.inserir} onFocus={() => {
+            setHover("#F39200")
+          }} onBlur={()=>{
+            setHover("#F5F5F5")
+          }}/>
+        </View>
+      </>
+    );
+  }

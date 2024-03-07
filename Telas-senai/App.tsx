@@ -9,7 +9,7 @@ import Cadastro_de_itens from './screens/Cadastro_de_itens'
 export default function App() {
   return (
     <>
-        <Inventário></Inventário>
+        <Login></Login>
     </>
   );
 }
