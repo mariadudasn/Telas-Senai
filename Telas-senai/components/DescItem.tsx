@@ -5,7 +5,6 @@ import { StatusBar } from 'expo-status-bar';
 export default function DescItem ({...props}) {
     return (
         <View style={stylesItem.container}>
-            <StatusBar style='dark'/>
             <Text style={stylesItem.tituloo}>{props.tituloo}</Text>
             <Text style={stylesItem.itemm}>{props.itemm}</Text>
         </View>

@@ -5,7 +5,6 @@ import { StatusBar } from 'expo-status-bar';
 export default function Btn ({...props}) {
     return (
         <View>
-            <StatusBar style='dark'/>
             <TouchableOpacity style={stylesBtn.iconee}>{props.icones}</TouchableOpacity>
         </View>
     );

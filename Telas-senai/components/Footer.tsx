@@ -5,7 +5,6 @@ import { StatusBar } from 'expo-status-bar';
 export default function Footer ({...props}) {
     return (
         <View style={[stylesFooter.footer, {backgroundColor: props.colorr}, {borderTopColor: props.bordacolor}]}>
-            <StatusBar style='dark'/>
             <TouchableOpacity style={stylesFooter.icone}>{props.icone}</TouchableOpacity>
             <TouchableOpacity style={stylesFooter.icone}>{props.icone2}</TouchableOpacity>
         </View>
