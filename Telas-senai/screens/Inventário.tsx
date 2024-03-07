@@ -7,6 +7,7 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
 import Item from '../components/Item';
 import { Ionicons } from '@expo/vector-icons';
+import Btn from '../components/Btn';
 
 export default function Inventário() {
   return (
@@ -29,9 +30,7 @@ export default function Inventário() {
             <Item titulo="956389" item="CADEIRA SENAI"/>
             <Item titulo="956389" item="CADEIRA SENAI"/>
           </ScrollView>
-          <TouchableOpacity style={stylesInv.icn}>
-            <Ionicons name="add-circle" size={60} color="#FF0000" />
-        </TouchableOpacity>
+          <Btn icones={<Ionicons name="add-circle" size={60} color="#FF0000"/>} />
         <Footer bordacolor="#FF0000" corr="#595959" colorr="#FF0000" icone={<MaterialIcons name="flip-camera-ios" size={30} color="#FFFFFF" />} icone2={<Fontisto name="list-1" size={25} color="#FFFFFF" />}/>
       </View>
     </>
@@ -42,12 +41,4 @@ const stylesInv = StyleSheet.create({
   container:{
     flex: 1
   },
-
-  icn:{
-      position: 'absolute',
-      bottom: 80,
-      right: 20,
-      zIndex: 1,
-  },
-
 })
