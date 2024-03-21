@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Descrição from '../components/Descrição';
 import Input from '../components/Input';
 import Botão from '../components/Botão';
+import { Link } from "expo-router";
 
 export default function Login() {
   return (
@@ -12,14 +13,18 @@ export default function Login() {
         <Descrição textodes="Faça Login para Acessar o Sistema!"></Descrição>
         <Input label="Email:" placeholder="Insira seu e-mail:" />
         <Input label="Senha:" placeholder="Insira sua senha:" secureTextEntry={true}/>
-        <Botão texto3="Entrar"/>
+        <Botão link="/Inventário" texto3="Entrar"/>
         <View style={styles.link}>
+          <Link href="/Cadastro" asChild>
             <TouchableOpacity>
                 <Text style={styles.linkText}>Cadastre-se</Text>
             </TouchableOpacity>
+          </Link>
+          <Link href="/Recusenha" asChild>
             <TouchableOpacity>
                 <Text style={styles.linkText}>Esqueceu a senha?</Text>
-          </TouchableOpacity>
+            </TouchableOpacity>
+          </Link>
         </View>
       </View>
     </>

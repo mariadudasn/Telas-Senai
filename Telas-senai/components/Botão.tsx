@@ -1,16 +1,20 @@
+import { Link } from 'expo-router';
 import { Text, TouchableOpacity, StyleSheet, View } from 'react-native';
+
 
 type BotãoProps ={
     texto3: string
   }
 
-export default function Botão({texto3}: BotãoProps) {
+export default function Botão({texto3, ...props}: BotãoProps) {
     return (
       <>
         <View style={styles.pad}>
-            <TouchableOpacity  style={styles.botao}>
-                <Text style={styles.texto3}>{texto3}</Text>
-            </TouchableOpacity>
+            <Link href={props.link} asChild>
+                <TouchableOpacity style={styles.botao}>
+                    <Text style={styles.texto3}>{texto3}</Text>
+                </TouchableOpacity>
+            </Link>
         </View>
     </>
     )}
