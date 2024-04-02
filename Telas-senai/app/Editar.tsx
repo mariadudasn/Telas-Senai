@@ -1,10 +1,10 @@
 import {View, StyleSheet, ScrollView} from 'react-native';
-import Nav from '../components/Nav';
+import Nav from '@comp/Nav';
 import { AntDesign } from '@expo/vector-icons';
-import InputInv from '../components/InputInv';
+import InputInv from '@comp/InputInv';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
-import Footer from '../components/Footer';
+import Footer from '@comp/Footer';
 
 export default function Cadastro_de_itens() {
   return (

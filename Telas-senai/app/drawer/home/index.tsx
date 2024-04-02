@@ -1,10 +1,10 @@
 import {View, StyleSheet, ScrollView, Image} from 'react-native';
-import Nav from '../../../components/Nav';
+import Nav from '@comp/Nav';
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
-import Footer from '../../../components/Footer';
+import Footer from '@comp/Footer';
 
 
 export default function Scanner() {
@@ -12,7 +12,7 @@ export default function Scanner() {
     <>
         <ScrollView style={stylesScanner.container}>
             <View style={stylesScanner.fundo}>
-                <Image source={require('../../../assets/QRcode.png')} />
+                <Image source={require('@assets/QRcode.png')} />
             </View>
         </ScrollView>
     <Footer bordacolor= "#CBCBCB" corr="#595959" colorr="#FFFFFF" icone={<MaterialIcons name="flip-camera-ios" size={30} color="#595959" />} icone2={<Fontisto name="list-1" size={25} color="#595959" />}/>

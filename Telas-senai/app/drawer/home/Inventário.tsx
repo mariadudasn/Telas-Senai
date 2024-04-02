@@ -1,13 +1,13 @@
 import {ScrollView, View, StyleSheet, TouchableOpacity} from 'react-native';
-import Nav from '../../../components/Nav';
+import Nav from '@comp/Nav';
 import { Entypo } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
-import Footer from '../../../components/Footer';
+import Footer from '@comp/Footer';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
-import Item from '../../../components/Item';
+import Item from '@comp/Item';
 import { Ionicons } from '@expo/vector-icons';
-import Btn from '../../../components/Btn';
+import Btn from '@comp/Btn';
 
 export default function Inventário() {
   return (

@@ -1,9 +1,8 @@
 import {View} from 'react-native';
-import Header from '../components/Header';
-import Descrição from '../components/Descrição';
-import Input from '../components/Input';
-import Botão from '../components/Botão';
-import { Link } from "expo-router";
+import Header from '@comp/Header';
+import Descrição from '@comp/Descrição';
+import Input from '@comp/Input';
+import Botão from '@comp/Botão';
 
 export default function Recusenha() {
   return (

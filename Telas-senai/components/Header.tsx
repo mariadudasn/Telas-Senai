@@ -10,7 +10,7 @@ export default function Header ({cor, texto}: HeaderProps) {
     return (
       <View style={[stylesHea.header, {backgroundColor: cor}]}>
           <StatusBar style='light'/>
-          <Image source={require('../assets/Logo.png')}/>
+          <Image source={require('@assets/Logo.png')}/>
           <Text style={stylesHea.textoed}>{texto}</Text>
       </View>
     );

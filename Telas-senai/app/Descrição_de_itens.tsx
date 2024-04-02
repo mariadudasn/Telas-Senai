@@ -1,13 +1,13 @@
 import {View, StyleSheet, ScrollView} from 'react-native';
-import Nav from '../components/Nav';
+import Nav from '@comp/Nav';
 import { AntDesign } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
-import Footer from '../components/Footer';
+import Footer from '@comp/Footer';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Btn from '../components/Btn';
-import DescItem from '../components/DescItem';
+import Btn from '@comp/Btn';
+import DescItem from '@comp/DescItem';
 
 
 export default function Descrição_de_itens() {

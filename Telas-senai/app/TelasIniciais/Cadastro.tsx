@@ -1,7 +1,7 @@
 import {View, StyleSheet, ScrollView} from 'react-native';
-import Header from '../components/Header';
-import Input from '../components/Input';
-import Botão from '../components/Botão';
+import Header from '@comp/Header';
+import Input from '@comp/Input';
+import Botão from '@comp/Botão';
 
 export default function Cadastro() {
   return (
