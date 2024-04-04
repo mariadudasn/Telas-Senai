@@ -13,7 +13,7 @@ export default function Login() {
         <Descrição textodes="Faça Login para Acessar o Sistema!"></Descrição>
         <Input label="Email:" placeholder="Insira seu e-mail:" />
         <Input label="Senha:" placeholder="Insira sua senha:" secureTextEntry={true}/>
-        <Botão href="drawer" texto3="Entrar"/>
+        <Botão href="TabNav" texto3="Entrar"/>
         <View style={styles.link}>
           <Link href="TelasIniciais/Cadastro" asChild>
             <TouchableOpacity>
