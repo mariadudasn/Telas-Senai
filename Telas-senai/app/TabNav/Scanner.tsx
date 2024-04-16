@@ -5,6 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
 import Footer from '@comp/Footer';
+import { StatusBar } from 'expo-status-bar';
 
 
 export default function Scanner() {
