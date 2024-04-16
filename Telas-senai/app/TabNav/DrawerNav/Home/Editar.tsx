@@ -10,7 +10,6 @@ export default function Cadastro_de_itens() {
   return (
     <>
       <View style={stylesCadInv.container}>
-        <Nav corr="#FFFFFF" backcolor="#FF0000" icone={<AntDesign name="arrowleft" size={30} color="#FFFFFF" />} texto="Editar" icone2={<AntDesign name="checkcircle" size={30} color="#FFFFFF" />} />
         <ScrollView  style={stylesCadInv.container2}>
           <InputInv title="N° Inventário"/>
           <InputInv title="Descrição"/>
@@ -19,7 +18,6 @@ export default function Cadastro_de_itens() {
           <InputInv title="Data de Registro"/>
         </ScrollView>
       </View>
-      <Footer bordacolor= "#CBCBCB" corr="#595959" colorr="#FFFFFF" icone={<MaterialIcons name="flip-camera-ios" size={30} color="#595959" />} icone2={<Fontisto name="list-1" size={25} color="#595959" />}/>
     </>
   );
 }

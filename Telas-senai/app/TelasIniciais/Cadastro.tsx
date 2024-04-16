@@ -2,6 +2,7 @@ import {View, StyleSheet, ScrollView} from 'react-native';
 import Header from '@comp/Header';
 import Input from '@comp/Input';
 import Botão from '@comp/Botão';
+import { useColor } from '../../temas/Temas';
 
 export default function Cadastro() {
   return (
@@ -16,7 +17,7 @@ export default function Cadastro() {
         <Input label="Telefone:" placeholder="Insira seu telefone:" />
         <Input label="Senha:" placeholder="Insira sua senha:" secureTextEntry={true}/>
         <Input label="Confirmar senha:" placeholder="Insira seu senha:" secureTextEntry={true}/>
-        <Botão href="drawer" texto3="Cadastrar"/>
+        <Botão href="TabNav" texto3="Cadastrar"/>
       </ScrollView>
     </>
   );

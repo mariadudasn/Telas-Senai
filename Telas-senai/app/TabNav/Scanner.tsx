@@ -10,12 +10,11 @@ import Footer from '@comp/Footer';
 export default function Scanner() {
   return (
     <>
-        <ScrollView style={stylesScanner.container}>
-            <View style={stylesScanner.fundo}>
-                <Image source={require('@assets/QRcode.png')} />
-            </View>
-        </ScrollView>
-    <Footer bordacolor= "#CBCBCB" corr="#595959" colorr="#FFFFFF" icone={<MaterialIcons name="flip-camera-ios" size={30} color="#595959" />} icone2={<Fontisto name="list-1" size={25} color="#595959" />}/>
+      <ScrollView style={stylesScanner.container}>
+          <View style={stylesScanner.fundo}>
+              <Image source={require('@assets/QRcode.png')} />
+          </View>
+      </ScrollView>
     </>
   );
 }

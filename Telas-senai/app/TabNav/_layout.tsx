@@ -6,7 +6,6 @@ export default function layout(){
     return (
         <Tabs screenOptions={{tabBarShowLabel: false}}>
             <Tabs.Screen name="Scanner" options={{
-                headerShown: false,
                 tabBarIcon: ({color, size}) => (
                     <Entypo name="camera" size={size} color={color} />
                 )

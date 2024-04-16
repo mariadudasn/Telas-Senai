@@ -4,8 +4,12 @@ import Descrição from '@comp/Descrição';
 import Input from '@comp/Input';
 import Botão from '@comp/Botão';
 import { Link } from 'expo-router';
+import { useColor } from '../../temas/Temas';
 
 export default function Login() {
+
+  const cores = useColor()
+
   return (
     <>
       <View>
