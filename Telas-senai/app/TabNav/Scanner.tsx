@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { StyleSheet, View, Text, TouchableOpacity, SafeAreaView } from 'react-native';
+import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
 import { Camera } from 'expo-camera';
 
 export default function Scanner() {
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   button: {
     padding: 20,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#FFFFFF',
     borderRadius: 10,
   },
   text: {

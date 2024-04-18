@@ -24,7 +24,8 @@ export default function Cadastro_de_itens() {
 
 const stylesCadInv = StyleSheet.create({
   container:{
-    flex: 1
+    flex: 1,
+    backgroundColor: "#FFFFFF"
   },
 
   container2:{
