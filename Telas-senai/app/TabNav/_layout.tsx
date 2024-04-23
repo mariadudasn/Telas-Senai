@@ -4,13 +4,14 @@ import { Entypo } from '@expo/vector-icons';
 import { StatusBar } from "expo-status-bar";
 import { Stack } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { TouchableOpacity } from "react-native";
 
 
 export default function layout(){
     return (
         <Tabs screenOptions={{tabBarShowLabel: false}}>
             <Tabs.Screen name="Scanner" options={{
-                headerRight: () => (<Ionicons name="refresh" size={30} color="#FFFFFF" style={{ marginRight: 10 }}/>),
+                headerRight: () => (<TouchableOpacity><Ionicons name="refresh" size={30} color="#FFFFFF" style={{ marginRight: 10 }}/></TouchableOpacity>),
                 tabBarIcon: ({color, size}) => (
                     <Entypo name="camera" size={size} color={color} />
                 ),
@@ -29,6 +30,7 @@ export default function layout(){
                 tabBarInactiveTintColor: "#FFFFFF",
                 tabBarActiveTintColor: "#FFFFFF"
             }}/>
+            <Tabs.Screen name="Cadastro_de_itens"/>
         </Tabs>
     )
 }
