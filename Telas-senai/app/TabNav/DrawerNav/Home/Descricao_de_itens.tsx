@@ -36,7 +36,8 @@ export default function Descrição_de_itens() {
 
 const stylesDescItem = StyleSheet.create({
   container:{
-    flex: 1
+    flex: 1,
+    backgroundColor: "#FFFFFF"
   },
 
   fundo:{

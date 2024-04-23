@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, TextInputProps } from 'react-native';
+import { Cores } from '../temas/Temas';
 
 interface InputProps extends TextInputProps{
   label:string
+  cores: Cores
 }
 
 export default function Input({label, ...props}: InputProps) {
-  const [hover, setHover] = useState("#F5F5F5")
+  const [hover, setHover] = useState(props.cores.inpbgPrimaryVariant)
   const stylesInp = StyleSheet.create({
 
     container:{
@@ -18,12 +20,12 @@ export default function Input({label, ...props}: InputProps) {
         fontSize: 14,
         fontWeight: '400',
         lineHeight: 17,
-        color: '#000000',
+        color: props.cores.txtcolorPrimary,
         paddingBottom: 15,
     },
 
     inserir: {
-      backgroundColor: '#F5F5F5',
+      backgroundColor: props.cores.inpbgPrimaryVariant,
       width: '100%',
       height:40,
       padding: 10,
@@ -38,10 +40,10 @@ export default function Input({label, ...props}: InputProps) {
       <>
         <View style={stylesInp.container}>
           <Text style={stylesInp.titulo}>{label}</Text>
-          <TextInput {...props} style={stylesInp.inserir} onFocus={() => {
-            setHover("#F39200")
+          <TextInput {...props} style={stylesInp.inserir} placeholderTextColor={props.cores.inptextcolorPrimaryVariant} onFocus={() => {
+            setHover(props.cores.inpbgHover)
           }} onBlur={()=>{
-            setHover("#F5F5F5")
+            setHover(props.cores.inpbgPrimaryVariant)
           }}/>
         </View>
       </>

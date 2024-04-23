@@ -4,20 +4,34 @@ import Descrição from '@comp/Descrição';
 import Input from '@comp/Input';
 import Botão from '@comp/Botão';
 import { Link } from 'expo-router';
-import { useColor } from '../../temas/Temas';
+import useColor from '../../temas/Temas';
 
 export default function Login() {
 
   const cores = useColor()
 
+  const styles = StyleSheet.create({
+    linkText: {
+        color: cores.nome === 'dark' ? cores.inptextcolorPrimaryVariant : cores.bgInfo 
+      },
+
+    link: {
+        flexDirection: "row",
+        justifyContent: 'space-between',
+        paddingLeft: 30,
+        paddingRight: 25,
+    }
+
+  })
+
   return (
     <>
-      <View>
-        <Header cor="#000000" texto="Login"></Header>
-        <Descrição textodes="Faça Login para Acessar o Sistema!"></Descrição>
-        <Input label="Email:" placeholder="Insira seu e-mail:" />
-        <Input label="Senha:" placeholder="Insira sua senha:" secureTextEntry={true}/>
-        <Botão href="TabNav" texto3="Entrar"/>
+      <View style={{backgroundColor : cores.bgPrimary, height: "100%"}}>
+        <Header cor={cores.nome === 'dark' ? cores.bgPrimary : "#000000"} texto="Login"></Header>
+        <Descrição cores={cores} textodes="Faça Login para Acessar o Sistema!"></Descrição>
+        <Input cores={cores} label="Email:" placeholder="Insira seu e-mail:" />
+        <Input cores={cores} label="Senha:" placeholder="Insira sua senha:" secureTextEntry={true}/>
+        <Botão cores={cores} href="TabNav" texto3="Entrar"/>
         <View style={styles.link}>
           <Link href="TelasIniciais/Cadastro" asChild>
             <TouchableOpacity>
@@ -35,16 +49,3 @@ export default function Login() {
   );
 }
 
-const styles = StyleSheet.create({
-    linkText: {
-        color: '#4305C7',
-      },
-
-    link: {
-        flexDirection: "row",
-        justifyContent: 'space-between',
-        paddingLeft: 30,
-        paddingRight: 25,
-    }
-
-})
