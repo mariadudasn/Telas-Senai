@@ -1,10 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, View, Text, SafeAreaView } from 'react-native';
 import { Camera } from 'expo-camera';
+import useColor from '../../temas/Temas';
 
 export default function Scanner() {
+  const cores = useColor()
   const camRef = useRef(null);
   const [hasPermission, setHasPermission] = useState(null);
+
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    camera: {
+      width: 450,
+      height: 450,
+    }
+  });
 
   useEffect(() => {
     (async () => {
@@ -22,34 +36,11 @@ export default function Scanner() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Camera style={styles.camera} ref={camRef}></Camera>
-    </SafeAreaView>
+    <View style={{backgroundColor : cores.bgPrimary, height: "100%"}}>
+      <SafeAreaView style={styles.container}>
+        <Camera style={styles.camera} ref={camRef}></Camera>
+      </SafeAreaView>
+    </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  camera: {
-    width: 450,
-    height: 450,
-  },
-  buttonContainer: {
-    position: 'absolute',
-    bottom: 20,
-    left: 20,
-  },
-  button: {
-    padding: 20,
-    backgroundColor: '#FFFFFF',
-    borderRadius: 10,
-  },
-  text: {
-    fontSize: 20,
-    color: '#000000',
-  },
-});

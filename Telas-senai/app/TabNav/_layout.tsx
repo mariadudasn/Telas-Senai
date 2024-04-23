@@ -5,9 +5,10 @@ import { StatusBar } from "expo-status-bar";
 import { Stack } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { TouchableOpacity } from "react-native";
-
+import useColor from "../../temas/Temas";
 
 export default function layout(){
+    const cores = useColor()
     return (
         <Tabs screenOptions={{tabBarShowLabel: false}}>
             <Tabs.Screen name="Scanner" options={{
@@ -16,8 +17,9 @@ export default function layout(){
                     <Entypo name="camera" size={size} color={color} />
                 ),
                 headerTintColor: "#FFFFFF",
-                headerStyle: { backgroundColor: "#FF0000"},
+                headerStyle: { backgroundColor: cores.bgSecundary},
                 headerStatusBarHeight: 25,
+                tabBarStyle: {backgroundColor: cores.bgPrimary}
 
             }}/>
             <Tabs.Screen name="DrawerNav" options={{
