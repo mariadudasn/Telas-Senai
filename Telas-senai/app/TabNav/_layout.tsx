@@ -29,8 +29,7 @@ export default function layout(){
                 tabBarIcon: ({color, size}) => (
                     <Entypo name="list" size={size} color={color}/>
                 ),
-                tabBarInactiveTintColor: "#FFFFFF",
-                tabBarActiveTintColor: "#FFFFFF"
+                tabBarInactiveTintColor: "#FFFFFF"
             }}/>
             <Tabs.Screen name="Cadastro_de_itens"/>
         </Tabs>

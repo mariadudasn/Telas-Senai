@@ -9,8 +9,22 @@ import Item from '@comp/Item';
 import { Ionicons } from '@expo/vector-icons';
 import Btn from '@comp/Btn';
 import { Link } from 'expo-router';
+import useColor from '../../../../temas/Temas';
 
 export default function Inventário() {
+  const cores = useColor()
+  const stylesInv = StyleSheet.create({
+    container:{
+      flex: 1,
+      backgroundColor: cores.bgPrimary,
+    },
+    icn: {
+      position: "absolute",
+      bottom: 80,
+      right: 20,
+      zIndex: 1
+    }
+  })
   return (
     <>
       <View style={stylesInv.container}>
@@ -40,15 +54,4 @@ export default function Inventário() {
   )
 }
 
-const stylesInv = StyleSheet.create({
-  container:{
-    flex: 1,
-    backgroundColor: "#FFFFFF"
-  },
-  icn: {
-    position: "absolute",
-    bottom: 80,
-    right: 20,
-    zIndex: 1
-  }
-})
+
