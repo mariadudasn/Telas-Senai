@@ -1,5 +1,4 @@
 import { StyleSheet, View, Text} from 'react-native';
-import { StatusBar } from 'expo-status-bar';
 import useColor from '../temas/Temas';
 
 export default function DescItem ({...props}) {

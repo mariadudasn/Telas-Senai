@@ -1,11 +1,5 @@
 import {View, StyleSheet, ScrollView} from 'react-native';
-import Nav from '@comp/Nav';
-import { AntDesign } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
 import InputInv from '@comp/InputInv';
-import { MaterialIcons } from '@expo/vector-icons';
-import { Fontisto } from '@expo/vector-icons';
-import Footer from '@comp/Footer';
 import useColor from '../../../../temas/Temas';
 
 export default function Cadastro_de_itens() {

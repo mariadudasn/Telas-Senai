@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, TouchableOpacity} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { Link } from 'expo-router';
 import useColor from '../temas/Temas';

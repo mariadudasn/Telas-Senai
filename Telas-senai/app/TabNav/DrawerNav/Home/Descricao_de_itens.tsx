@@ -1,12 +1,5 @@
 import {View, StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
-import Nav from '@comp/Nav';
-import { AntDesign } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
-import { MaterialIcons } from '@expo/vector-icons';
-import { Fontisto } from '@expo/vector-icons';
-import Footer from '@comp/Footer';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import Btn from '@comp/Btn';
 import DescItem from '@comp/DescItem';
 import { Link } from 'expo-router';
 import useColor from '../../../../temas/Temas';

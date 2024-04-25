@@ -1,8 +1,5 @@
 import { Tabs } from "expo-router";
-import { FontAwesome } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
-import { StatusBar } from "expo-status-bar";
-import { Stack } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
 import { TouchableOpacity } from "react-native";
 import useColor from "../../temas/Temas";
