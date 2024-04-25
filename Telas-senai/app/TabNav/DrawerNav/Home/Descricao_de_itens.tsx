@@ -9,9 +9,31 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Btn from '@comp/Btn';
 import DescItem from '@comp/DescItem';
 import { Link } from 'expo-router';
+import useColor from '../../../../temas/Temas';
 
 
 export default function Descrição_de_itens() {
+  const cores = useColor()
+  const stylesDescItem = StyleSheet.create({
+    container:{
+      flex: 1,
+      backgroundColor: cores.bgPrimary
+    },
+  
+    fundo:{
+      width: "100%",
+      height: 525,
+      backgroundColor: cores.nome === 'dark' ? cores.bgPrimary:  "#FBFBFB",
+      paddingTop: 40
+    },
+    icn: {
+      position: "absolute",
+      bottom: 35,
+      right: 20,
+      zIndex: 1
+    }
+  
+  })
   return (
     <>
       <View style={stylesDescItem.container}>
@@ -34,23 +56,3 @@ export default function Descrição_de_itens() {
   );
 }
 
-const stylesDescItem = StyleSheet.create({
-  container:{
-    flex: 1,
-    backgroundColor: "#FFFFFF"
-  },
-
-  fundo:{
-    width: "100%",
-    height: 525,
-    backgroundColor: "#FBFBFB",
-    paddingTop: 40
-  },
-  icn: {
-    position: "absolute",
-    bottom: 80,
-    right: 20,
-    zIndex: 1
-  }
-
-})

@@ -15,10 +15,10 @@ export default function Layout(){
                     headerIconColor: cores.txtcolorPrimary
                 }
             }}/>
-            <Stack.Screen name="Cadastro_de_itens" options={{ headerTitle: "Cadastro de itens", headerTitleAlign:"center", headerStyle: {backgroundColor: "#FF0000"}, headerTintColor: "#FFFFFF", 
+            <Stack.Screen name="Cadastro_de_itens" options={{ headerTitle: "Cadastro de itens", headerTitleAlign:"center", headerStyle: {backgroundColor: cores.bgSecundary}, headerTintColor: "#FFFFFF",
                 headerRight: () => (<TouchableOpacity><AntDesign name="pluscircleo" size={30}  color="#FFFFFF" style={{ marginRight: 10 }}/></TouchableOpacity>),
             }}/>
-            <Stack.Screen name="Descricao_de_itens" options={{ headerTitle: "Descrição de itens", headerTitleAlign:"center", headerStyle: {backgroundColor: "#FF0000"}, headerTintColor: "#FFFFFF",
+            <Stack.Screen name="Descricao_de_itens" options={{ headerTitle: "Descrição de itens", headerTitleAlign:"center", headerStyle: {backgroundColor: cores.bgSecundary}, headerTintColor: "#FFFFFF",
                 headerRight: () => (<TouchableOpacity><AntDesign name="pluscircleo" size={30}  color="#FFFFFF" style={{ marginRight: 10 }}/></TouchableOpacity>),
             }}/>
             <Stack.Screen name="Editar" options={{ headerTitle: "Editar", headerTitleAlign:"center", headerStyle: {backgroundColor: "#FF0000"}, headerTintColor: "#FFFFFF",

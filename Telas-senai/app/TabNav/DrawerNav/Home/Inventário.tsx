@@ -20,7 +20,7 @@ export default function Inventário() {
     },
     icn: {
       position: "absolute",
-      bottom: 80,
+      bottom: 35,
       right: 20,
       zIndex: 1
     }
