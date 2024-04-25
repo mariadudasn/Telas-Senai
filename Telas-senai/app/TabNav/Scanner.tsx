@@ -6,7 +6,7 @@ import useColor from '../../temas/Temas';
 export default function Scanner() {
   const cores = useColor()
   const camRef = useRef(null);
-  const [hasPermission, setHasPermission] = useState(null);
+  const [hasPermission, setHasPermission] = useState(false);
 
   const styles = StyleSheet.create({
     container: {
